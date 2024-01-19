@@ -5,4 +5,19 @@
     <string name="sensor_count_menu">Sensor count</string>
     <!--    make text with quantity plural -->
     <string name="sensor_snackbar_text">Sensor count: %d</string>
+    <string name="sensor_find_online">Find sensor online</string>
+    <string name="name">Name</string>
+    <string name="vendor">Vendor</string>
+    <string name="type_code">Type code</string>
+    <string name="type">Type</string>
+    <string name="id">Identifier</string>
+    <string name="max_delay">Max delay</string>
+    <string name="min_delay">Min delay</string>
+    <string name="maximum_range">Maximum range</string>
+    <string name="power">Power</string>
+    <string name="resolution">Resolution</string>
+    <string name="version">Version</string>
+    <string name="is_wakeup">Is wakeup</string>
+    <string name="is_dynamic">Is dynamic</string>
+
 </resources>

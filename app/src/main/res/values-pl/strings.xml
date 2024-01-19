@@ -3,6 +3,21 @@
     <string name="sensor_list">Czujniki</string>
     <string name="sensor_examples">Przykłady</string>
     <string name="sensor_count_menu">Liczba czujników</string>
-<!--    make text with quantity plural -->
+    <!--    make text with quantity plural -->
     <string name="sensor_snackbar_text">Liczba czujników: %d</string>
+    <string name="sensor_find_online">Znajdź czujnik w Internecie</string>
+    <string name="name">Nazwa</string>
+    <string name="vendor">Sprzedawca</string>
+    <string name="type_code">Kod liczbowy</string>
+    <string name="type">Typ</string>
+    <string name="id">Identyfikator</string>
+    <string name="max_delay">Maksymalne opóźnienie</string>
+    <string name="min_delay">Minimalne opóźnienie</string>
+    <string name="maximum_range">Maksymalny zasięg</string>
+    <string name="power">Moc</string>
+    <string name="resolution">Rozdzielczość</string>
+    <string name="version">Wersja</string>
+    <string name="is_wakeup">Czy jest wzbudzający</string>
+    <string name="is_dynamic">Czy jest dynamiczny</string>
+
 </resources>

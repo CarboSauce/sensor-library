@@ -68,13 +68,8 @@ public class SensorListAdapter extends RecyclerView.Adapter<SensorListAdapter.Vi
         var name = sensorList
                 .get(position)
                 .getName();
-        var type = sensorList
-                .get(position)
-                .getStringType();
-        var matcher = typeRegex.matcher(type);
-        if (matcher.find()) {
-            type = matcher.group();
-        }
+        var type = SensorService
+                .getPrettySensorType(sensorList.get(position));
         holder.setIndex(position);
         holder.sensorName.setText(name);
         holder.sensorType.setText(type);

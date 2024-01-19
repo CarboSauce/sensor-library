@@ -1,18 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:stretchColumns="1"
     tools:context=".activities.SensorDetail">
 
-    <TextView
-        android:id="@+id/sensorName"
-        android:layout_width="193dp"
-        android:layout_height="81dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name" />
+            <TextView
+                android:id="@+id/sensorName"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/vendor" />
+            <TextView
+                android:id="@+id/sensorVendor"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/type" />
+            <TextView
+                android:id="@+id/sensorType"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/type_code" />
+            <TextView
+                android:id="@+id/sensorTypeCode"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/id" />
+            <TextView
+                android:id="@+id/sensorId"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/max_delay" />
+            <TextView
+                android:id="@+id/sensorMaxDelay"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/min_delay" />
+            <TextView
+                android:id="@+id/sensorMinDelay"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/maximum_range" />
+            <TextView
+                android:id="@+id/sensorMaxRange"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/power" />
+            <TextView
+                android:id="@+id/sensorPower"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/resolution" />
+            <TextView
+                android:id="@+id/sensorResolution"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/version" />
+            <TextView
+                android:id="@+id/sensorVersion"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/is_dynamic" />
+            <TextView
+                android:id="@+id/sensorIsDynamic"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/is_wakeup" />
+            <TextView
+                android:id="@+id/sensorIsWakeUp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
