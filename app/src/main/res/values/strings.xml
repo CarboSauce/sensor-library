@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">sensor-library</string>
+    <string name="app_name">Sensor Explorer</string>
+    <string name="sensor_list">Sensors</string>
+    <string name="sensor_examples">Examples</string>
+    <string name="sensor_count_menu">Sensor count</string>
+    <!--    make text with quantity plural -->
+    <string name="sensor_snackbar_text">Sensor count: %d</string>
 </resources>

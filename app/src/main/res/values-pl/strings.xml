@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Eksplorator czujników</string>
+    <string name="sensor_list">Czujniki</string>
+    <string name="sensor_examples">Przykłady</string>
+    <string name="sensor_count_menu">Liczba czujników</string>
+<!--    make text with quantity plural -->
+    <string name="sensor_snackbar_text">Liczba czujników: %d</string>
+</resources>
