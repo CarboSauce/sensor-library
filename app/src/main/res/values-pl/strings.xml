@@ -18,5 +18,16 @@
     <string name="version">Wersja</string>
     <string name="is_wakeup">Czy jest wzbudzający</string>
     <string name="is_dynamic">Czy jest dynamiczny</string>
-
+    <string name="accelerometer">Akcelerometr</string>
+    <string name="proximity">Zbliżenie</string>
+    <string name="light">Światło</string>
+    <string name="rotation">Rotacja</string>
+    <string name="sensor_missing">Nie posiadasz takiego czujnika</string>
+    <string name="light_sensor_text">Wartość światła</string>
+    <string name="proximity_sensor_text">Wartość zbliżenia</string>
+    <string name="accelerometer_sensor_text">Wartość akcelerometru</string>
+    <string name="rotation_sensor_text">Wartość rotacji</string>
+    <string name="reset_chart">Zresetuj wykres</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
 </resources>

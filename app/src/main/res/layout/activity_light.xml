@@ -42,7 +42,7 @@
             android:id="@+id/toggle_update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/toggle_update" />
+            android:text="@string/stop" />
     </LinearLayout>
 
     <com.github.mikephil.charting.charts.LineChart

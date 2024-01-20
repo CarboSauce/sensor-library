@@ -22,6 +22,7 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.sauce.sensor.R;
 import com.sauce.sensor.service.SensorService;
+import com.sauce.sensor.util.ChartFloatFormatter;
 
 import java.util.ArrayList;
 
@@ -33,12 +34,13 @@ public class LightActivity extends AppCompatActivity implements SensorEventListe
     Button resetChart;
     LineChart chart;
     static ArrayList<Float> sensorValues;
-    private final static String KEY_PAUSE_STATE = "pause_state";
     ArrayList<Entry> entries;
     LineDataSet lineDataSet;
     LineData lineData;
 
     boolean updateChart = true;
+    private final static String KEY_PAUSE_STATE = "pause_state";
+    private final static int sampleCap = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +84,7 @@ public class LightActivity extends AppCompatActivity implements SensorEventListe
             lineDataSet = new LineDataSet(entries,getString(R.string.light));
             lineDataSet.setColor(Color.RED);
             lineDataSet.setValueTextSize(11f);
+            lineDataSet.setValueFormatter(new ChartFloatFormatter());
             lineData = new LineData(lineDataSet);
             chart.setData(lineData);
             fillValues();
@@ -152,7 +155,7 @@ public class LightActivity extends AppCompatActivity implements SensorEventListe
 
     void addValue(float value) {
         if (updateChart == false) return;
-        if (sensorValues.size() < 30) {
+        if (sensorValues.size() < sampleCap) {
             sensorValues.add(value);
         } else {
             sensorValues.remove(0);
