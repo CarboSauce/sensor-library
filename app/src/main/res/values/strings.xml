@@ -3,7 +3,6 @@
     <string name="sensor_list">Sensors</string>
     <string name="sensor_examples">Examples</string>
     <string name="sensor_count_menu">Sensor count</string>
-    <!--    make text with quantity plural -->
     <string name="sensor_snackbar_text">Sensor count: %d</string>
     <string name="sensor_find_online">Find sensor online</string>
     <string name="name">Name</string>
@@ -19,5 +18,14 @@
     <string name="version">Version</string>
     <string name="is_wakeup">Is wakeup</string>
     <string name="is_dynamic">Is dynamic</string>
-
+    <string name="accelerometer">Accelerometer</string>
+    <string name="proximity">Proximity</string>
+    <string name="light">Light</string>
+    <string name="rotation">Rotation</string>
+    <string name="sensor_missing">No such sensor</string>
+    <string name="light_sensor_text">Light value</string>
+    <string name="toggle_update">Toggle update</string>
+    <string name="reset_chart">Reset chart</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
 </resources>

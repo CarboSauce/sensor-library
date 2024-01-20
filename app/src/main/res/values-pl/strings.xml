@@ -3,12 +3,11 @@
     <string name="sensor_list">Czujniki</string>
     <string name="sensor_examples">Przykłady</string>
     <string name="sensor_count_menu">Liczba czujników</string>
-    <!--    make text with quantity plural -->
     <string name="sensor_snackbar_text">Liczba czujników: %d</string>
     <string name="sensor_find_online">Znajdź czujnik w Internecie</string>
     <string name="name">Nazwa</string>
     <string name="vendor">Sprzedawca</string>
-    <string name="type_code">Kod liczbowy</string>
+    <string name="type_code">Typ jako liczba</string>
     <string name="type">Typ</string>
     <string name="id">Identyfikator</string>
     <string name="max_delay">Maksymalne opóźnienie</string>

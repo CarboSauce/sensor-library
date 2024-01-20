@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
     @Override
-    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
         outState.putInt(KEY_TAB_INDEX,tabLayout.getSelectedTabPosition());
     }
 

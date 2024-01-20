@@ -26,7 +26,21 @@ public class SensorService {
     private SensorService() {
 
     }
-
+    public boolean hasAccelerometer() {
+        return hasSensor(Sensor.TYPE_ACCELEROMETER);
+    }
+    public boolean hasRotation() {
+        return hasSensor(Sensor.TYPE_ROTATION_VECTOR);
+    }
+    public boolean hasProximity() {
+        return hasSensor(Sensor.TYPE_PROXIMITY);
+    }
+    public boolean hasLight() {
+        return hasSensor(Sensor.TYPE_LIGHT);
+    }
+    private boolean hasSensor(int id) {
+        return sensorManager .getDefaultSensor(id) != null;
+    }
     public void setSensorManager(SensorManager sensorManager) {
         this.sensorManager = sensorManager;
         sensors = sensorManager.getSensorList(Sensor.TYPE_ALL);
